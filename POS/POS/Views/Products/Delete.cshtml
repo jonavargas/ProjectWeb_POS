@@ -1,0 +1,54 @@
+﻿@model ClassLibrary1.Products
+
+@{
+    ViewBag.Title = "Delete";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<fieldset>
+    <legend>Products</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.costPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.costPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Category.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Category.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Brand.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Brand.name)
+    </div>
+</fieldset>
+@using (Html.BeginForm()) {
+    @Html.AntiForgeryToken()
+    <p>
+        <input type="submit" value="Delete" /> |
+        @Html.ActionLink("Back to List", "Index")
+    </p>
+}

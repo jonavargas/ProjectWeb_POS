@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="9db229322b0742449689cf550a16bd43" Name="Diagram1">
+        <EntityTypeShape EntityType="POSModel.Bill" Width="1.5" PointX="3" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.BillDetail" Width="1.5" PointX="5.25" PointY="4.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Brand" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Category" Width="1.5" PointX="0.75" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Client" Width="1.5" PointX="0.75" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Employee" Width="1.5" PointX="0.75" PointY="12.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Products" Width="1.5" PointX="3" PointY="3.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.ProductSuppliers" Width="1.5" PointX="8.25" PointY="4.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Suppliers" Width="1.5" PointX="6" PointY="8.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.Warehouse" Width="1.5" PointX="6" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="POSModel.WarehouseProducts" Width="1.5" PointX="8.25" PointY="1.375" IsExpanded="true" />
+        <AssociationConnector Association="POSModel.FK_Bill_Client" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_Bill_Employee" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_BillDetail_Bill" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_BillDetail_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_Products_Brand" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_Products_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_ProductSuppliers_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_WarehouseProducts_Products" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_ProductSuppliers_Suppliers" ManuallyRouted="false" />
+        <AssociationConnector Association="POSModel.FK_WarehouseProducts_Warehouse" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

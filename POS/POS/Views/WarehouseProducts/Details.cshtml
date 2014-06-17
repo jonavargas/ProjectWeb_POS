@@ -1,0 +1,36 @@
+﻿@model ClassLibrary1.WarehouseProducts
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>WarehouseProducts</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.qtyAvailable)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.qtyAvailable)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Warehouse.description)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Warehouse.description)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Products.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Products.name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

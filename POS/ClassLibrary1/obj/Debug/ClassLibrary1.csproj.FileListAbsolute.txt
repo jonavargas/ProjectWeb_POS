@@ -1,0 +1,16 @@
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS\POS\ClassLibrary1\obj\Debug\ClassLibrary1.pdb
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\bin\Debug\ClassLibrary1.dll.config
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\bin\Debug\ClassLibrary1.dll
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\bin\Debug\ClassLibrary1.pdb
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\bin\Debug\EntityFramework.dll
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\bin\Debug\EntityFramework.xml
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\obj\Debug\ClassLibrary1.csprojResolveAssemblyReference.cache
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\obj\Debug\ClassLibrary1.dll
+C:\Users\Jonathan\Documents\Visual Studio 2013\Projects\Project_POS C#\POS\ClassLibrary1\obj\Debug\ClassLibrary1.pdb

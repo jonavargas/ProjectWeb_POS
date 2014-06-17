@@ -1,0 +1,50 @@
+﻿@model ClassLibrary1.Products
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Products</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.code)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.code)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.costPrice)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.costPrice)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Category.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Category.name)
+    </div>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.Brand.name)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.Brand.name)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

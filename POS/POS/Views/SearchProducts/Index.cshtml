@@ -1,0 +1,60 @@
+﻿@model POS.Models.SearchProductsModels
+
+@{
+    ViewBag.Title = "Search Products";
+}
+
+<h2>Search Products</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.ValidationSummary(true)
+
+    <div class="editor-field">
+        @Html.EditorFor(model => model.SearchText)
+    </div>
+    <input type="submit" value="Search" />
+}
+
+<table>
+    <thead>
+        <tr>
+            <td style="font-weight:bold">
+                Code
+            </td>
+            <td style="font-weight:bold">
+                Name
+            </td>
+            <td style="font-weight:bold">
+                Available
+            </td>
+            <td style="font-weight:bold">
+                Cost Price
+            </td>            
+            <td style="font-weight:bold">
+                Brand
+            </td>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.WarehouseProducts)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Products.code)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Products.name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.qtyAvailable)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Products.costPrice)
+                </td>                
+                <td>
+                    @Html.DisplayFor(modelItem => item.Products.Brand.name)
+                </td>
+            </tr>
+        }
+</table>
