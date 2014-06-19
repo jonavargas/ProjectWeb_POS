@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8" />
-        <title>@ViewBag.Title - My ASP.NET MVC Application</title>
+        <title>@ViewBag.Title - Library</title>
         <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
         <meta name="viewport" content="width=device-width" />
         @Styles.Render("~/Content/css")
@@ -14,7 +14,7 @@
         <header>
             <div class="content-wrapper">
                 <div class="float-left">
-                    <p class="site-title">@Html.ActionLink("your logo here", "Index", "Home")</p>
+                    <p class="site-title">@Html.ActionLink("Library", "Index", "Home")</p>
                 </div>
                 <div class="float-right">
                     <section id="login">
@@ -22,11 +22,12 @@
                     </section>
                     <nav>
                         <ul id="menu">
-                            <li>@Html.ActionLink("Suppliers", "Index", "Suppliers")</li>
-                            <li>@Html.ActionLink("Clients", "Index", "Client")</li>
-                            <li>@Html.ActionLink("Employees", "Index", "Employee")</li>
-                            <li>@Html.ActionLink("Search Products", "Index", "SearchProducts")</li>
-                            <li>@Html.ActionLink("Bills", "Index", "Bill")</li>
+                            <li class="btn btn-default"><img class="prove" src="../Images/supliers.png" alt="" /> @Html.ActionLink("Suppliers", "Index", "Suppliers")</li>
+                            <li class="btn btn-default"><img class="client" src="../Images/client.png" alt=""/> @Html.ActionLink("Clients", "Index", "Client")</li>
+                            <li class="btn btn-default"><img class="employee" src="../Images/employee.png" alt="" /> @Html.ActionLink("Employees", "Index", "Employee")</li>
+                            <li class="btn btn-default"><img class="product" src="../Images/product.gif" alt="" /> @Html.ActionLink("Product", "Index", "Product")</li>
+                            <li class="btn btn-default"><img class="search" src="../Images/search.png" alt="" /> @Html.ActionLink("Search Products", "Index", "SearchProducts")</li>
+                            <li class="btn btn-default"><img class="bill" src="../Images/bill.png" alt="" /> @Html.ActionLink("Bills", "Index", "Bill")</li>
                         </ul>
                     </nav>
                 </div>
