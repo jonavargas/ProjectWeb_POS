@@ -1,11 +1,11 @@
 ﻿html {
-    background-color: rgba(199, 209, 214, 0.91);
+    background-color: #e2e2e2;
     margin: 0;
     padding: 0;
 }
 
 body {
-    background-color: rgba(199, 209, 214, 0.91);
+    background-color: #fff;
     border-top: solid 10px #000;
     color: #333;
     font-size: .85em;
@@ -15,7 +15,7 @@ body {
 }
 
 a {
-    color: #000;
+    color: #333;
     outline: none;
     padding-left: 3px;
     padding-right: 3px;
@@ -35,12 +35,9 @@ header, footer, hgroup,
 nav, section {
     display: block;
 }
-.header{
-    background-color:rgba(199, 209, 214, 0.91);
-}
 
 mark {
-    background-color:rgba(199, 209, 214, 0.91);
+    background-color: #a6dbed;
     padding-left: 5px;
     padding-right: 5px;
 }
@@ -102,19 +99,19 @@ h5, h6 {
 }
 
 #body {
-    background-color: rgba(199, 209, 214, 0.91);
+    background-color: #efeeef;
     clear: both;
     padding-bottom: 35px;
 }
 
     .main-content {
-        background: rgba(199, 209, 214, 0.91);
+        background: url("../Images/accent.png") no-repeat;
         padding-left: 10px;
         padding-top: 30px;
     }
 
     .featured + .main-content {
-        background: rgba(199, 209, 214, 0.91);
+        background: url("../Images/heroAccent.png") no-repeat;
     }
 
 header .content-wrapper {
@@ -123,7 +120,7 @@ header .content-wrapper {
 
 footer {
     clear: both;
-    background-color:rgba(199, 209, 214, 0.91);
+    background-color: #e2e2e2;
     font-size: .8em;
     height: 100px;
 }
@@ -183,11 +180,11 @@ footer {
 /* menu
 ----------------------------------------------------------*/
 ul#menu {
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: 600;
     margin: 0 0 5px;
     padding: 0;
-    text-align: center;
+    text-align: right;
 }
 
     ul#menu li {
@@ -198,12 +195,12 @@ ul#menu {
 
         ul#menu li a {
             background: none;
-            color: #000;
+            color: #999;
             text-decoration: none;
         }
 
         ul#menu li a:hover {
-            color: #000;
+            color: #333;
             text-decoration: none;
         }
 
@@ -212,11 +209,11 @@ ul#menu {
 ----------------------------------------------------------*/
 /* featured */
 .featured {
-    background-color: rgba(199, 209, 214, 0.91);
+    background-color: #fff;
 }
 
     .featured .content-wrapper {
-        background-color: rgba(199, 209, 214, 0.91);
+        background-color: #7ac0da;
         background-image: -ms-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -o-linear-gradient(left, #7ac0da 0%, #a4d4e6 100%);
         background-image: -webkit-gradient(linear, left top, right top, color-stop(0, #7ac0da), color-stop(1, #a4d4e6));
@@ -661,7 +658,6 @@ tr.pager td {
     .main-content,
     .featured + .main-content {
         background-position: 10px 0;
-
     }
 
     .content-wrapper {
@@ -757,28 +753,4 @@ tr.pager td {
         footer p {
             margin: 0;
         }
-}
-
-    /* Codigo mio
-    ----------------------------------------------------------*/
-
-.prove{
-    width: 7%;
-    height:6%;
-}
-.client{
-    width: 4%;
-    height:3%;
-}
-.employee{
-    width: 4%;
-    height:3%;
-}
-.search{
-    width: 4%;
-    height:3%;    
-}
-.bill{
-    width: 4%;
-    height:3%;    
 }
