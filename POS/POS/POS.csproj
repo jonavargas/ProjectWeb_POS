@@ -191,6 +191,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ProductsController.cs" />
     <Compile Include="Controllers\ProductSuppliersController.cs" />
+    <Compile Include="Controllers\SearchEmployeeController.cs" />
     <Compile Include="Controllers\SearchProductsController.cs" />
     <Compile Include="Controllers\SearchSuppliersController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
@@ -201,6 +202,7 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\SearchEmployeeModels.cs" />
     <Compile Include="Models\SearchProductsModels.cs" />
     <Compile Include="Models\SearchSuppliersModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -376,6 +378,7 @@
     <Content Include="Views\WarehouseProducts\Delete.cshtml" />
     <Content Include="Views\SearchProducts\Index.cshtml" />
     <Content Include="Views\SearchSuppliers\Index.cshtml" />
+    <Content Include="Views\SearchEmployee\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
