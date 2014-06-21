@@ -10,26 +10,32 @@
 <fieldset>
     <legend>WarehouseProducts</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.qtyAvailable)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.qtyAvailable)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.DisplayName("Product")
+            </th>
+            <th>
+                @Html.DisplayName("QTY")
+            </th>
+            <th>
+                @Html.DisplayName("Warehause")
+            </th>
+            <th></th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Products.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.qtyAvailable)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Warehouse.description)
+            </td>
+        </tr>
+    </table>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Warehouse.description)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Warehouse.description)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Products.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Products.name)
-    </div>
 </fieldset>
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
