@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ClassLibrary1.Warehouse>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Warehause";
 }
 
-<h2>Index</h2>
+<h2>Warehause</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -12,10 +12,10 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.description)
+            @Html.DisplayName("Description")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.address)
+            @Html.DisplayName("Address")
         </th>
         <th></th>
     </tr>

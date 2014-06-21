@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ClassLibrary1.WarehouseProducts>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Warehouse Products";
 }
 
-<h2>Index</h2>
+<h2>Warehouse Products</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -12,13 +12,13 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.qtyAvailable)
+            @Html.DisplayName("QTY")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Warehouse.description)
+            @Html.DisplayName("Warehause")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Products.name)
+            @Html.DisplayName("Product")
         </th>
         <th></th>
     </tr>
