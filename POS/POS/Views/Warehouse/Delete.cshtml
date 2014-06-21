@@ -4,7 +4,7 @@
     ViewBag.Title = "Delete";
 }
 
-<h2>Delete</h2>
+<h2>Delete Warehause</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <fieldset>
@@ -13,12 +13,11 @@
     <table class="table table-hover">
         <tr>
             <th>
-                @Html.Display("Description")
+                @Html.LabelForModel("Description")
             </th>
             <th>
-                @Html.Display("Address")
+                @Html.LabelForModel("Address")
             </th>
-            <th></th>
         </tr>
         <tr>
             <td>

@@ -4,45 +4,48 @@
     ViewBag.Title = "Details";
 }
 
-<h2>Details</h2>
+<h2>Details Product</h2>
 
 <fieldset>
     <legend>Products</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.name)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Code")
+            </th>
+            <th>
+                @Html.LabelForModel("Product")
+            </th>
+            <th>
+                @Html.LabelForModel("Price")
+            </th>
+            <th>
+                @Html.LabelForModel("Category")
+            </th>
+            <th>
+                @Html.LabelForModel("Brand")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.code)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.costPrice)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Category.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Brand.name)
+            </td>
+        </tr>
+    </table>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.code)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.code)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.costPrice)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.costPrice)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Category.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Category.name)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Brand.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Brand.name)
-    </div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
