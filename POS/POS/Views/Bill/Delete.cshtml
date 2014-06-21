@@ -1,77 +1,77 @@
 ﻿@model ClassLibrary1.Bill
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Delete Bill";
 }
 
-<h2>Delete</h2>
+<h2>Delete Bill</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <fieldset>
     <legend>Bill</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.date)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.date)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.tax)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.tax)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.discount)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.discount)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.paymentType)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.paymentType)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.state)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.state)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.subtotal)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.subtotal)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.total)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.total)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Employee.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Employee.name)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Client.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Client.name)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Date")
+            </th>
+            <th>
+                @Html.LabelForModel("Employee")
+            </th>
+            <th>
+                @Html.LabelForModel("Client")
+            </th>
+            <th>
+                @Html.LabelForModel("State")
+            </th>
+            <th>
+                @Html.LabelForModel("Payment Type")
+            </th>
+            <th>
+                @Html.LabelForModel("Discount")
+            </th>
+            <th>
+                @Html.LabelForModel("Subtotal")
+            </th>
+            <th>
+                @Html.LabelForModel("Tax")
+            </th>
+            <th>
+                @Html.LabelForModel("Total")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.date)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Employee.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Client.name)
+            </td>
+            <td>
+               @Html.DisplayFor(model => model.state)
+            </td>
+            <td>
+               @Html.DisplayFor(model => model.paymentType)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.discount)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.subtotal)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.tax)
+            </td>
+            <td>
+               @Html.DisplayFor(model => model.total)
+            </td>
+        </tr>
+        
+    </table>     
+   
 </fieldset>
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()

@@ -1,76 +1,75 @@
 ﻿@model ClassLibrary1.Bill
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Details Bill";
 }
 
-<h2>Details</h2>
+<h2>Details Bill</h2>
 
 <fieldset>
     <legend>Bill</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.date)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.date)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Date")
+            </th>
+            <th>
+                @Html.LabelForModel("Employee")
+            </th>
+            <th>
+                @Html.LabelForModel("Client")
+            </th>
+            <th>
+                @Html.LabelForModel("State")
+            </th>
+            <th>
+                @Html.LabelForModel("Payment Type")
+            </th>
+            <th>
+                @Html.LabelForModel("Discount")
+            </th>
+            <th>
+                @Html.LabelForModel("Subtotal")
+            </th>
+            <th>
+                @Html.LabelForModel("Tax")
+            </th>
+            <th>
+                @Html.LabelForModel("Total")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.date)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Employee.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Client.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.state)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.paymentType)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.discount)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.subtotal)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.tax)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.total)
+            </td>
+        </tr>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.tax)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.tax)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.discount)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.discount)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.paymentType)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.paymentType)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.state)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.state)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.subtotal)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.subtotal)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.total)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.total)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Employee.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Employee.name)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Client.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Client.name)
-    </div>
+    </table>  
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |
