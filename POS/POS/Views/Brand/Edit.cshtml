@@ -1,10 +1,10 @@
 ﻿@model ClassLibrary1.Brand
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit Brand";
 }
 
-<h2>Edit</h2>
+<h2>Edit Brand</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
@@ -16,7 +16,7 @@
         @Html.HiddenFor(model => model.id)
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.name)
+            @Html.LabelForModel("Name")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.name)

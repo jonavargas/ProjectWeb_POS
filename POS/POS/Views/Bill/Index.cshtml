@@ -1,43 +1,44 @@
 ﻿@model IEnumerable<ClassLibrary1.Bill>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Bill";
 }
 
-<h2>Index</h2>
+<h2>Bill</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @Html.ActionLink("Create New Bill", "Create")
 </p>
 <table class="table table-hover">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.date)
+            @Html.DisplayName("Date")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.tax)
+            @Html.DisplayName("Employee")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.discount)
+            @Html.DisplayName("Client")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.paymentType)
+            @Html.DisplayName("State")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.state)
+            @Html.DisplayName("Payment Type")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.subtotal)
+            @Html.DisplayName("Discount")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.total)
+            @Html.DisplayName("Subtotal")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Employee.name)
+            @Html.DisplayName("Tax")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.Client.name)
-        </th>
+            @Html.DisplayName("Total")
+        </th>       
+        
         <th></th>
     </tr>
 
@@ -48,29 +49,30 @@
                 @Html.DisplayFor(modelItem => item.date)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.tax)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.discount)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.paymentType)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.state)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.subtotal)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.total)
-            </td>
-            <td>
                 @Html.DisplayFor(modelItem => item.Employee.name)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Client.name)
             </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.state)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.paymentType)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.discount)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.subtotal)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.tax)
+            </td>
+             <td>
+                @Html.DisplayFor(modelItem => item.total)
+            </td>
+            
             <td>
                 @Html.ActionLink("Edit", "Edit", new { id = item.id }) |
                 @Html.ActionLink("Details", "Details", new { id = item.id }) |
