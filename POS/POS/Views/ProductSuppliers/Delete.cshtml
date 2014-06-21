@@ -10,26 +10,31 @@
 <fieldset>
     <legend>ProductSuppliers</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.price)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.price)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Product")
+            </th>
+            <th>
+                @Html.LabelForModel("Price")
+            </th>
+            <th>
+                @Html.LabelForModel("Supplier")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.Products.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.price)
+            </td>
+            <td>
+                @Html.DisplayNameFor(model => model.Suppliers.name)
+            </td>
+        </tr>
+    </table>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Suppliers.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Suppliers.name)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Products.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Products.name)
-    </div>
 </fieldset>
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
