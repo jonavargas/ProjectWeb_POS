@@ -1,0 +1,11 @@
+drop table WarehouseProducts
+drop table Warehouse
+drop table ProductSuppliers
+drop table Suppliers
+drop table BillDetail
+drop table Bill
+drop table Client
+drop table Employee
+drop table Products
+drop table Category
+drop table Brand
