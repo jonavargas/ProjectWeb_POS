@@ -33,11 +33,9 @@ namespace POS.Controllers
             }
             else
             {
-                // fill restaurants in model
                 model.ProductSuppliers = db.ProductSuppliers.Where(x => x.Products.name.Contains(search)).ToList();
             }
 
-            // return model to the view
             return View(model);
         }
     }

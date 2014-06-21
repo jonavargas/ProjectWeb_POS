@@ -1,5 +1,5 @@
-﻿using ClassLibrary1;
-using POS.Models;
+﻿using POS.Models;
+using ClassLibrary1;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,32 +8,32 @@ using System.Web.Mvc;
 
 namespace POS.Controllers
 {
-    public class SearchEmployeeController : Controller
+    public class SearchClientController : Controller
     {
         private POS_DB db = new POS_DB();
         //
-        // GET: /SearchEmployee/
+        // GET: /SearchClient/
 
         public ActionResult Index()
         {
-            var employee = db.Employee.ToList();
-            var model = new SearchEmployeeModels();
-            model.Employee = employee;
+            var client = db.Client.ToList();
+            var model = new SearchClientModels();
+            model.Client = client;
             return View(model);
         }
 
         [HttpPost]
-        public ActionResult Index(SearchEmployeeModels model)
+        public ActionResult Index(SearchClientModels model)
         {
             var search = model.SearchText;
 
             if (string.IsNullOrEmpty(search))
             {
-                model.Employee = db.Employee.ToList();
+                model.Client = db.Client.ToList();
             }
             else
             {
-                model.Employee = db.Employee.Where(e => e.name.Contains(search)).ToList();
+                model.Client = db.Client.Where(e => e.name.Contains(search)).ToList();
             }
 
             return View(model);
