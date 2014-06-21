@@ -9,19 +9,25 @@
 <fieldset>
     <legend>Warehouse</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.description)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.description)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.Display("Description")
+            </th>
+            <th>
+                @Html.Display("Address")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.description)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.address)
+            </td>
+        </tr>
+    </table>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.address)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.address)
-    </div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |

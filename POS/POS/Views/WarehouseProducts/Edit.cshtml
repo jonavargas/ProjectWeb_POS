@@ -16,7 +16,15 @@
         @Html.HiddenFor(model => model.id)
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.qtyAvailable)
+            @Html.Label("Product")
+        </div>
+        <div class="editor-field">
+            @Html.DropDownList("idProducts", String.Empty)
+            @Html.ValidationMessageFor(model => model.idProducts)
+        </div>
+
+        <div class="editor-label">
+            @Html.Label("QTY")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.qtyAvailable)
@@ -24,20 +32,12 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.idWarehouse, "Warehouse")
+            @Html.Label("Warehouse")
         </div>
         <div class="editor-field">
             @Html.DropDownList("idWarehouse", String.Empty)
             @Html.ValidationMessageFor(model => model.idWarehouse)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.idProducts, "Products")
-        </div>
-        <div class="editor-field">
-            @Html.DropDownList("idProducts", String.Empty)
-            @Html.ValidationMessageFor(model => model.idProducts)
-        </div>
+        </div>       
 
         <p>
             <input type="submit" value="Save" />
