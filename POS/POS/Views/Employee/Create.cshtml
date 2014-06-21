@@ -1,7 +1,7 @@
 ﻿@model ClassLibrary1.Employee
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Create Employee";
 }
 
 <h2>Create</h2>
@@ -14,7 +14,7 @@
         <legend>Employee</legend>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.name)
+            @Html.LabelForModel("Name")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.name)
@@ -22,7 +22,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.lastName1)
+            @Html.LabelForModel("Last Name 1")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.lastName1)
@@ -30,7 +30,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.lastName2)
+            @Html.LabelForModel("Last Name 2")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.lastName2)
@@ -38,7 +38,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.phone)
+            @Html.LabelForModel("Phone")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.phone)
@@ -46,7 +46,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.user)
+            @Html.LabelForModel("User")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.user)
@@ -54,7 +54,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.pass)
+            @Html.LabelForModel("Pass")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.pass)
