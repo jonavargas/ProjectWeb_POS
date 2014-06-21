@@ -1,10 +1,10 @@
 ﻿@model ClassLibrary1.Bill
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit Bill";
 }
 
-<h2>Edit</h2>
+<h2>Edit Bill</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
@@ -16,7 +16,7 @@
         @Html.HiddenFor(model => model.id)
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.date)
+            @Html.LabelForModel("Date")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.date)
@@ -24,55 +24,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.tax)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.tax)
-            @Html.ValidationMessageFor(model => model.tax)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.discount)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.discount)
-            @Html.ValidationMessageFor(model => model.discount)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.paymentType)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.paymentType)
-            @Html.ValidationMessageFor(model => model.paymentType)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.state)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.state)
-            @Html.ValidationMessageFor(model => model.state)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.subtotal)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.subtotal)
-            @Html.ValidationMessageFor(model => model.subtotal)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.total)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.total)
-            @Html.ValidationMessageFor(model => model.total)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.employee_Id, "Employee")
+            @Html.LabelForModel("Employee")
         </div>
         <div class="editor-field">
             @Html.DropDownList("employee_Id", String.Empty)
@@ -80,12 +32,60 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.client_Id, "Client")
+            @Html.LabelForModel("Client")
         </div>
         <div class="editor-field">
             @Html.DropDownList("client_Id", String.Empty)
             @Html.ValidationMessageFor(model => model.client_Id)
         </div>
+
+        <div class="editor-label">
+            @Html.LabelForModel("State")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.state)
+            @Html.ValidationMessageFor(model => model.state)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelForModel("Payment Type")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.paymentType)
+            @Html.ValidationMessageFor(model => model.paymentType)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelForModel("Discount")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.discount)
+            @Html.ValidationMessageFor(model => model.discount)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelForModel("Subtotal")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.subtotal)
+            @Html.ValidationMessageFor(model => model.subtotal)
+        </div>
+
+        <div class="editor-label">
+            @Html.LabelForModel("Tax")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.tax)
+            @Html.ValidationMessageFor(model => model.tax)
+        </div>       
+
+        <div class="editor-label">
+            @Html.LabelForModel("Total")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.total)
+            @Html.ValidationMessageFor(model => model.total)
+        </div>   
 
         <p>
             <input type="submit" value="Save" />
