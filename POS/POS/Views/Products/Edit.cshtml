@@ -4,7 +4,7 @@
     ViewBag.Title = "Edit";
 }
 
-<h2>Edit</h2>
+<h2>Edit Product</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
@@ -16,15 +16,7 @@
         @Html.HiddenFor(model => model.id)
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.name)
-        </div>
-        <div class="editor-field">
-            @Html.EditorFor(model => model.name)
-            @Html.ValidationMessageFor(model => model.name)
-        </div>
-
-        <div class="editor-label">
-            @Html.LabelFor(model => model.code)
+            @Html.LabelForModel("Code")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.code)
@@ -32,7 +24,15 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.costPrice)
+            @Html.Label("Product")
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.name)
+            @Html.ValidationMessageFor(model => model.name)
+        </div>        
+
+        <div class="editor-label">
+            @Html.Label("Price")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.costPrice)
@@ -40,7 +40,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.category_Id, "Category")
+            @Html.Label("Category")
         </div>
         <div class="editor-field">
             @Html.DropDownList("category_Id", String.Empty)
@@ -48,7 +48,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.brand_Id, "Brand")
+            @Html.Label("Brand")
         </div>
         <div class="editor-field">
             @Html.DropDownList("brand_Id", String.Empty)
