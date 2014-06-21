@@ -1,10 +1,10 @@
 ﻿@model IEnumerable<ClassLibrary1.Suppliers>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Suppliers";
 }
 
-<h2>Index</h2>
+<h2>Suppliers</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -12,16 +12,16 @@
 <table class="table table-hover">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.name)
+            @Html.DisplayName("Name")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.phone)
+            @Html.DisplayName("Phone")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.address)
+            @Html.DisplayName("Address")
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.detail)
+            @Html.DisplayName("Detail")
         </th>
         <th></th>
     </tr>
