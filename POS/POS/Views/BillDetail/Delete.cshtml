@@ -10,40 +10,39 @@
 <fieldset>
     <legend>BillDetail</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.price)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.price)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Price")
+            </th>
+            <th>
+                @Html.LabelForModel("Tax")
+            </th>
+            <th>
+                @Html.LabelForModel("Qty")
+            </th>
+            <th>
+                @Html.LabelForModel("Payment Type")
+            </th>
+            <th>
+                @Html.LabelForModel("Product")
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.price)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.tax)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.qty)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.Products.name)
+            </td>            
+        </tr>
+    </table> 
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.tax)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.tax)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.qty)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.qty)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Bill.paymentType)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Bill.paymentType)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.Products.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.Products.name)
-    </div>
 </fieldset>
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()

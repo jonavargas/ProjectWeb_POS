@@ -1,10 +1,9 @@
-﻿@model POS.Models.SearchProductsModels
-
+﻿@model POS.Models.SearchWarehouseProductsModels
 @{
-    ViewBag.Title = "Search Products";
+    ViewBag.Title = "Search Warehouse";
 }
 
-<h2>Search Products</h2>
+<h2>Search Warehouse</h2>
 
 @using (Html.BeginForm())
 {
@@ -20,29 +19,20 @@
     <thead>
         <tr>
             <td style="font-weight:bold">
-                Code
-            </td>
-            <td style="font-weight:bold">
-                Product
+                Products
             </td>
             <td style="font-weight:bold">
                 Qty
             </td>
             <td style="font-weight:bold">
-                Cost Price
+                Warehouse
             </td>
-            <td style="font-weight:bold">
-                Brand
-            </td>
-        </tr>
+     </tr>
     </thead>
     <tbody>
         @foreach (var item in Model.WarehouseProducts)
         {
             <tr>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Products.code)
-                </td>
                 <td>
                     @Html.DisplayFor(modelItem => item.Products.name)
                 </td>
@@ -50,11 +40,8 @@
                     @Html.DisplayFor(modelItem => item.qtyAvailable)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Products.costPrice)
+                    @Html.DisplayFor(modelItem => item.Warehouse)
                 </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Products.Brand.name)
-                </td>
-            </tr>
+          </tr>
         }
 </table>
