@@ -16,9 +16,9 @@ namespace POS.Controllers
 
         public ActionResult Index()
         {
-            var warehouse = db.WarehouseProducts.ToList();
+            var warehouseProducts = db.WarehouseProducts.ToList();
             var model = new SearchWarehouseProductsModels();
-            model.WarehouseProducts = warehouse;
+            model.WarehouseProducts = warehouseProducts;
             return View(model);
             
         }
