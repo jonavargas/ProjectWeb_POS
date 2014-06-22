@@ -1,49 +1,52 @@
 ﻿@model ClassLibrary1.Client
 
 @{
-    ViewBag.Title = "Delete";
+    ViewBag.Title = "Delete Client";
 }
 
-<h2>Delete</h2>
+<h2>Delete Client</h2>
 
 <h3>Are you sure you want to delete this?</h3>
 <fieldset>
     <legend>Client</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.name)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Name")
+            </th>
+            <th>
+                @Html.LabelForModel("Last Name1")
+            </th>
+            <th>
+                @Html.LabelForModel("Last Name 2")
+            </th>
+            <th>
+                @Html.LabelForModel("Address")
+            </th>
+            <th>
+                @Html.LabelForModel("Phone")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.lastName1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.lastName2)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.address)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.phone)
+            </td>
+        </tr>
+    </table>  
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.lastName1)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.lastName1)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.lastName2)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.lastName2)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.address)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.address)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.phone)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.phone)
-    </div>
 </fieldset>
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()

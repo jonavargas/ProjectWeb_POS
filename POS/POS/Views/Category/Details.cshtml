@@ -1,27 +1,35 @@
 ﻿@model ClassLibrary1.Category
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Details Category";
 }
 
-<h2>Details</h2>
+<h2>Details Category</h2>
 
 <fieldset>
     <legend>Category</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.name)
-    </div>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.description)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.description)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Date")
+            </th>
+            <th>
+                @Html.LabelForModel("Description")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.name)
+            </td>
+        </tr>
+   </table>  
+
+    
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |

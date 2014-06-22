@@ -14,7 +14,7 @@
         <legend>BillDetail</legend>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.price)
+            @Html.Label("Price")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.price)
@@ -22,7 +22,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.tax)
+            @Html.Label("Tax")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.tax)
@@ -30,7 +30,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.qty)
+            @Html.Label("Qty")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.qty)
@@ -38,7 +38,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.bill_Id, "Bill")
+            @Html.Label( "Bill")
         </div>
         <div class="editor-field">
             @Html.DropDownList("bill_Id", String.Empty)
@@ -46,7 +46,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.products_Id, "Products")
+            @Html.Label("Products")
         </div>
         <div class="editor-field">
             @Html.DropDownList("products_Id", String.Empty)

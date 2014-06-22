@@ -1,10 +1,10 @@
 ﻿@model ClassLibrary1.Client
 
 @{
-    ViewBag.Title = "Create";
+    ViewBag.Title = "Create Client";
 }
 
-<h2>Create</h2>
+<h2>Create Client</h2>
 
 @using (Html.BeginForm()) {
     @Html.AntiForgeryToken()
@@ -14,7 +14,7 @@
         <legend>Client</legend>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.name)
+            @Html.Label("Name")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.name)
@@ -22,7 +22,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.lastName1)
+            @Html.Label("Last Name 1")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.lastName1)
@@ -30,7 +30,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.lastName2)
+            @Html.Label("Last Name 2")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.lastName2)
@@ -38,7 +38,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.address)
+            @Html.Label("Address")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.address)
@@ -46,7 +46,7 @@
         </div>
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.phone)
+            @Html.Label("Phone")
         </div>
         <div class="editor-field">
             @Html.EditorFor(model => model.phone)

@@ -195,6 +195,7 @@
     <Compile Include="Controllers\SearchEmployeeController.cs" />
     <Compile Include="Controllers\SearchProductsController.cs" />
     <Compile Include="Controllers\SearchSuppliersController.cs" />
+    <Compile Include="Controllers\SearchWarehouseProductsController.cs" />
     <Compile Include="Controllers\SuppliersController.cs" />
     <Compile Include="Controllers\WarehouseController.cs" />
     <Compile Include="Controllers\WarehouseProductsController.cs" />
@@ -207,6 +208,7 @@
     <Compile Include="Models\SearchEmployeeModels.cs" />
     <Compile Include="Models\SearchProductsModels.cs" />
     <Compile Include="Models\SearchSuppliersModels.cs" />
+    <Compile Include="Models\SearchWarehouseProductsModels.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -382,6 +384,7 @@
     <Content Include="Views\SearchSuppliers\Index.cshtml" />
     <Content Include="Views\SearchEmployee\Index.cshtml" />
     <Content Include="Views\SearchClient\Index.cshtml" />
+    <Content Include="Views\SearchWarehouseProducts\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

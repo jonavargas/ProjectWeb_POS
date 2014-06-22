@@ -1,48 +1,51 @@
 ﻿@model ClassLibrary1.Client
 
 @{
-    ViewBag.Title = "Details";
+    ViewBag.Title = "Details Client";
 }
 
-<h2>Details</h2>
+<h2>Details Client</h2>
 
 <fieldset>
     <legend>Client</legend>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.name)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.name)
-    </div>
+    <table class="table table-hover">
+        <tr>
+            <th>
+                @Html.LabelForModel("Name")
+            </th>
+            <th>
+                @Html.LabelForModel("Last Name 1")
+            </th>
+            <th>
+                @Html.LabelForModel("Last Name 2")
+            </th>
+            <th>
+                @Html.LabelForModel("Address")
+            </th>
+            <th>
+                @Html.LabelForModel("Phone")
+            </th>
+        </tr>
+        <tr>
+            <td>
+                @Html.DisplayFor(model => model.name)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.lastName1)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.lastName2)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.address)
+            </td>
+            <td>
+                @Html.DisplayFor(model => model.phone)
+            </td>
+        </tr>
+    </table>
 
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.lastName1)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.lastName1)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.lastName2)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.lastName2)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.address)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.address)
-    </div>
-
-    <div class="display-label">
-         @Html.DisplayNameFor(model => model.phone)
-    </div>
-    <div class="display-field">
-        @Html.DisplayFor(model => model.phone)
-    </div>
 </fieldset>
 <p>
     @Html.ActionLink("Edit", "Edit", new { id=Model.id }) |

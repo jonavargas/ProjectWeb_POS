@@ -763,31 +763,24 @@ tr.pager td {
     /* Codigo mio
     ----------------------------------------------------------*/
 
-.prove{
-    width: 7%;
-    height:6%;
+
+.prod{
+    margin-top:5%;
+    margin-left:-350%;
+}
+.supli{
+    margin-top:-21%;
+    margin-left:-280%;
 }
 .client{
-    width: 4%;
-    height:3%;
+    margin-top:-21%;
+    margin-left:-206%;
 }
-.employee{
-    width: 4%;
-    height:3%;
-}
-.search{
-    width: 4%;
-    height:3%;    
+.emplo{
+    margin-top:-21%;
+    margin-left:-147%;
 }
 .bill{
-    width: 4%;
-    height:3%;    
-}
-.product{
-    width: 5%;
-    height:4%; 
-}
-.prod{
-    margin-top:-6%;
-    margin-left:10%;
+    margin-top:-21%;
+    margin-left:-70%;
 }
