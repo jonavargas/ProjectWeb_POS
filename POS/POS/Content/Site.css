@@ -771,19 +771,24 @@ tr.pager td {
 }
 .supli{
     margin-top:-24%;
-    margin-left:-280%;
+    margin-left:-285%;
 }
 .client{
-    margin-top:-24%;
-    margin-left:-206%;
+    margin-top:-24.5%;
+    margin-left:-218%;
 }
 .emplo{
-    margin-top:-24%;
-    margin-left:-147%;
+    margin-top:-24.5%;
+    margin-left:-165%;
 }
 .bill{
-    margin-top:-24%;
-    margin-left:-70%;
+    margin-top:-24.5%;
+    margin-left:-94%;
+}
+.warehouse{
+    margin-top:-24.5%;
+    margin-left:-50%;
+
 }
 .btn-custom {
     background-color: hsl(195, 99%, 62%) !important;
