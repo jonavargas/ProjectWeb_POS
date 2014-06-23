@@ -24,11 +24,12 @@ a {
 
     a:link, a:visited,
     a:active, a:hover {
-        color: #333;
+        color: #000;
     }
 
     a:hover {
-        background-color: #c7d1d6;
+        background-color: rgba(199, 209, 214, 0.91);
+        
     }
 
 header, footer, hgroup,
@@ -132,16 +133,16 @@ footer {
 /* site title
 ----------------------------------------------------------*/
 .site-title {
-    color: #2b3ed1;
+    color: #2ba0cb;
     font-family: Rockwell, Consolas, "Courier New", Courier, monospace;
-    font-size: 3em;
-    margin: 0;
+    font-size: 4em;
+    margin-left: 2%;
     
 }
 
 .site-title a, .site-title a:hover, .site-title a:active {
     background: none;
-    color: #2b3ed1;
+    color: #1193c3;
     outline: none;
     text-decoration: none;
 }
@@ -765,22 +766,52 @@ tr.pager td {
 
 
 .prod{
-    margin-top:5%;
+    margin-top:8%;
     margin-left:-350%;
 }
 .supli{
-    margin-top:-21%;
+    margin-top:-24%;
     margin-left:-280%;
 }
 .client{
-    margin-top:-21%;
+    margin-top:-24%;
     margin-left:-206%;
 }
 .emplo{
-    margin-top:-21%;
+    margin-top:-24%;
     margin-left:-147%;
 }
 .bill{
-    margin-top:-21%;
+    margin-top:-24%;
     margin-left:-70%;
+}
+.btn-custom {
+    background-color: hsl(195, 99%, 62%) !important;
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#85e0fe", endColorstr="#3ecefe");
+    background-image: -khtml-gradient(linear, left top, left bottom, from(#85e0fe), to(#3ecefe));
+    background-image: -moz-linear-gradient(top, #85e0fe, #3ecefe);
+    background-image: -ms-linear-gradient(top, #85e0fe, #3ecefe);
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #85e0fe), color-stop(100%, #3ecefe));
+    background-image: -webkit-linear-gradient(top, #85e0fe, #3ecefe);
+    background-image: -o-linear-gradient(top, #85e0fe, #3ecefe);
+    background-image: linear-gradient(#85e0fe, #3ecefe);
+    border-color: #3ecefe #3ecefe hsl(195, 99%, 58.5%);
+    color: #333 !important;
+    text-shadow: 0 1px 1px rgba(255, 255, 255, 0.23);
+    -webkit-font-smoothing: antialiased;
+    border-bottom-width:thick;
+}
+.img-library{
+    background-color: rgba(199, 209, 214, 0.91);   
+}
+
+.library{
+    margin-left:18%;
+    margin-top:8%;
+}
+.dropdown-menu:hover{
+   color: #1193c3; 
+   text-decoration: none;
+   background-color:hsl(195, 99%, 62%);
 }

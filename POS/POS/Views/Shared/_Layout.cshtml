@@ -23,12 +23,12 @@
                     <nav>
                        <div class="prod">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" class="btn-custom" data-toggle="dropdown">
                                     Products
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#">@Html.ActionLink("Products", "Index", "Products")</li>
+                                    <li><a href="#"/>@Html.ActionLink("Products", "Index", "Products")</li>
                                     <li>@Html.ActionLink("Search Products", "Index", "SearchProducts")</li>
                                     <li>@Html.ActionLink("Category", "Index", "Category")</li>
                                     <li>@Html.ActionLink("Brand", "Index", "Brand")</li>
@@ -38,58 +38,53 @@
                         </div>
                         <div class="supli">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" class="btn-custom" data-toggle="dropdown">
                                     Suppliers
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li ><a href="#"> @Html.ActionLink("Suppliers", "Index", "Suppliers")</li>                                   
+                                    <li ><a href="#"/> @Html.ActionLink("Suppliers", "Index", "Suppliers")</li>                                   
                                     <li>@Html.ActionLink("Search Supliers", "Index", "SearchSuppliers")</li>
                                 </ul>
                             </div>       
                         </div>
                         <div class="client">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" class="btn-custom" data-toggle="dropdown">
                                     Client
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"> @Html.ActionLink("Client", "Index", "Client")</li>
+                                    <li><a href="#"/> @Html.ActionLink("Client", "Index", "Client")</li>
                                     <li>@Html.ActionLink("Search Client", "Index", "SearchClient")</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="emplo">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                                <button type="button" class="btn-custom" data-toggle="dropdown">
                                     Employee
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"> @Html.ActionLink("Employee", "Index", "Employee")</li>
+                                    <li><a href="#"/> @Html.ActionLink("Employee", "Index", "Employee")</li>
                                     <li>@Html.ActionLink("Search Employee", "Index", "SearchEmployee")</li>
                                 </ul>
                             </div>
                         </div>
                         <div class="bill">
                             <div class="btn-group">
-                                <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                                    Bll
+                                <button type="button" class="btn-custom" data-toggle="dropdown">
+                                    Bill
                                     <span class="caret"></span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a href="#"> @Html.ActionLink("Bill", "Index", "Bill")</li>
-                                    
+                                    <li><a href="#"/> @Html.ActionLink("Bill", "Index", "Bill")</li>                                    
                                 </ul>
                             </div>
-                        </div>
-
-
-                        
+                        </div>                        
                     </nav>
-                </div>
-                
+                </div>                
             </div>
             
         </header>
@@ -108,6 +103,9 @@
         </footer>
         @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/Content/js/bootstrap.min.js")
-        @RenderSection("scripts", required: false)
+        @RenderSection("scripts", required: false)     
+
+      
     </body>
+
 </html>
